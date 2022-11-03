@@ -1,0 +1,212 @@
+/*cotainer cannot be a minimum of 100% unless the body is specified as 100%*/
+html, body{
+    height: 100%;
+}
+/*the only content visible is the container, hiding the footer unless navigated to by user */
+.container{
+    min-height: 100%;
+}
+/* sets height of footer and scrolling for main content */
+.main{
+    overflow: auto;
+    padding-bottom: auto;
+}
+/*sets background colour of footer, position and height and sets all content within to be flex and evenly spaced*/
+footer{
+    background-color: #401640;
+    filter: drop-shadow(0 5px 10px #c03bc5);
+    position: relative;
+    height: auto;
+    clear: both;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footercontainer{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 20px;
+    
+}
+
+p{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    line-height: 2;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-decoration: none; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.footercontainer h2:before{
+    content: '';
+    height: 3.5px;
+    width: 75%;
+    background: #c03bc5;
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+}
+
+h3{
+    text-decoration: none; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.footercontainer h3:before{
+    content: '';
+    height: 3.5px;
+    width: 50%;
+    background: #c03bc5;
+    position: absolute;
+    left: 65px;
+    bottom: -30px;
+}
+
+
+h4{
+    text-decoration: none; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.footercontainer h4:before{
+    content: '';
+    height: 3.5px;
+    width: 50%;
+    background: #c03bc5;
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+}
+
+
+.about{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.links{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.links ul{
+    line-height: 3.8;
+    list-style-type: none;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.links li{
+    margin: 5px;
+}
+
+.links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: rgb(241, 229, 159);
+    text-decoration: underline;
+}
+
+.contact{
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.contact ul{
+    line-height: 2;
+    list-style-type: none;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 3px;
+    font-size: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact li{
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.socialmedia{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.socialmedia li a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #c03bc5;
+    display: flex;
+    margin-left: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia li a:hover{
+    background: rgb(241, 229, 159);
+}
+
+.copyright{
+    padding: 10px 0;
+    color: rgb(218, 211, 211);
+    text-align: center;
+    background-color: #351335;
+    border-top: 1px solid #c03bc5;
+}
+
+@media screen and (max-width:768px){
+    
+.footercontainer{
+    flex-direction: column;
+    
+}
+}
