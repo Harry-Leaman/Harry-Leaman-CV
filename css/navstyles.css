@@ -110,6 +110,7 @@ p1{
     width: 25%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    text-align: center;
   }
   .nav-links li{
     opacity: 0;
